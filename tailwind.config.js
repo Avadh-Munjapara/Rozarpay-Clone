@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         mullish: ["Mulish", "sans-serif"],
       },
+      width:{
+        uw: "1080px",
+      },
       colors: {
         deepBlue: "#02042a",
         lightBlue: "#2b84ea",
