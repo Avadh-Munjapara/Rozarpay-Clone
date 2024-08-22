@@ -9,6 +9,16 @@
         .corefeaturesection{
             background-size: 100% 100%;
         }
+        .moveimage{
+            
+            animation: moveimg 10s linear infinite;
+            
+            }
+        @keyframes moveimg {
+                100%{
+                    transform:translateY(-20rem);
+                }
+            }
     </style>
 </head>
 <body>
@@ -323,14 +333,16 @@
                 
             </section>
         </section>
-        <section class="bg-[url(images/feature-section-2BG.svg)] bg-cover h-fit w-full font-mullish pb-[40rem]  pt-80">
+        <section class="bg-[url(images/feature-section-2BG.svg)] bg-cover h-fit w-full font-mullish pb-[40rem] pt-80">
+                
                 <h2 class="font-bold text-center text-2xl mb-4 text-white">Explore Razorpay Business Banking </h2>
                 <div class="w-6 bg-greenLight h-1 mx-auto"></div>
-            <div>
                 <div class="w-[1080px] mx-auto relative border border-slate-700 pl-10 mt-7 text-white">
-                        <div class="flex relative">
-                        <img src="images/x-flame-1.png" class="absolute h-[170px] w-[170px] -top-24 -left-28 " alt="">
+                    <div class="absolute h-[170px] w-[170px] -top-24 -left-28 ">
+                        <img src="images/x-flame-1.png"  alt="">
+                    </div>
                         <img src="images/x-flame-2.png" class="absolute h-[170px] w-[170px] bottom-32 -right-32" alt="">
+                        <div class="flex">
                             <div class="flex flex-col pt-8 gap-9">
                                 <h3 class="font-semibold text-[1.79rem]">Manage your company’s finances<br> with <img src="images/razorpayX.svg" class="inline w-40" alt=""> <span class="text-greenLight">Business Banking</span></h3>
                                 <p>
@@ -360,7 +372,7 @@
                                     <a href="#" class="hover:text-white transition-all duration-200 text-lightBlue  font-bold self-center">Know More <svg class="w-2 inline group-hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0b72e7" d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"/></svg></a>
                                 </div>
                             </div>
-                            <img src="images/buisness-banking.png" class="w-[53%] z-10" alt="">
+                            <img src="images/buisness-banking.png" class="w-[53%]" alt="">
                         </div>
 
                    
@@ -492,7 +504,6 @@
                     Check out the Demo  
                    
                 </button></p>
-            </div>
         </section>
 
         <section class="relative font-mullish pb-3">
@@ -597,6 +608,30 @@
                         <h4 class="text-white font-bold">Instant Activation</h4>
                         <p class="text-white">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
                     </div>
+                </div>
+        </section>
+
+        <section class="w-full font-mullish bg-[#f5f8fe] relative -z-10 -top-36 pt-40">
+                <div class="max-w-[1080px] mx-auto flex pb-10">
+                    <div class="flex flex-col gap-3 self-center">
+
+                        <h2 class="text-deepBlue font-bold text-2xl">Join the 50,00,000+ businesses using Razorpay</h2>
+                        <div class="w-6 bg-greenLight h-1 mx-auto mb-4"></div>
+
+                        <p class="text-grayText">
+                            We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
+    <br><br>
+    Focus on your business while we handle the complexities of payments for you.
+                    </div>
+                    <div class="max-w-[55%] relative -top-10 overflow-hidden h-[500px] group" >
+                        <div class="w-full h-32 absolute bg-grad bg-gradient-to-t from-[#fff0] to-[#f4f8ff] top-0 z-50"></div>
+                        <img src="images/comanies.png" class="moveimage" alt="">
+                        <div class="w-full h-32 absolute bg-grad bg-gradient-to-b from-[#fff0] to-[#f4f8ff] bottom-0 z-50"></div>
+                    </div>
+                    
+
+
+                    </p>
                 </div>
         </section>
     </div>
