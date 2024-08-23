@@ -671,7 +671,8 @@
         </section>
 
 
-        <section class="w-full bg-cover bg-[url(/images/CTABg.svg)] pt-36 pl-24 pb-36 font-mullish corefeaturesection">
+        <section class="w-full relative bg-cover bg-[url(/images/CTABg.svg)] pt-36  pb-36 font-mullish corefeaturesection">
+            <div class="absolute w-full ml-0 h-1/2 -z-10 bottom-0 bg-gradient-to-r from-[#eef9fe] to-[#edf7ff]"></div>
             <div class="flex max-w-[1080px] mx-auto justify-between">
                 <div class="flex flex-col gap-3 text-white max-w-[500px]">
                     <h2 class="font-bold  text-2xl ">Supercharge your business with Razorpay
@@ -693,7 +694,7 @@
                         </li>
                     </ul>
     
-                    <button class=" bg-white relative gap-2 text-lightBlue300 py-4 justify-center font-bold rounded-md w-32 flex hover:bg-lightBlue500">
+                    <button class=" bg-white relative gap-2 text-lightBlue300 py-4 justify-center font-bold rounded-md w-32 flex hover:text-lightBlue500 transition-all duration-200 ">
         
                         Sign Up 
                         <svg
@@ -714,86 +715,414 @@
         </section>
 
 
-        <footer id="ft" class="font-mullish bg-gradient-to-r from-[#eef9fe] to-[#edf7ff]">
-            <div class="max-w-[1080px] mx-auto flex">
+        <footer id="ft" class="font-mullish pt-12 bg-gradient-to-r from-[#eef9fe] to-[#edf7ff]">
+            <div class="max-w-[1080px] mx-auto flex gap-32">
                 <div class="w-1/4 flex flex-col gap-5">
                     <img src="images/logo-dark.svg" class="w-32" alt="">
                     <p class="text-grayText text-sm">Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
                     <p class="text-grayText text-sm">RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
                     <p class="text-grayText text-sm">Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.</p>
-                    <p class="text-grayText text-sm">Disclaimer: The RazorpayX powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your RazorpayX powered account is provided by our partner bank, in accordance with RBI regulations. RazorpayX itself is not a bank and doesn't hold or claim to hold a banking license.</p>
-                    <label for="newsletter-email">SUBSCRIBE TO OUR <br> NEWSLETTER</label>
-                    <div class="flex w-fit p-1 bg-white border border-slate-700">
-                        <input type="email" name="email" id="newsletter-email" class="" placeholder="Enter your Email address" >
-                        <a href="#" class="flex text-lightBlue">Subscribe<svg
+                    <p class="text-grayText text-[0.625rem]">Disclaimer: The RazorpayX powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your RazorpayX powered account is provided by our partner bank, in accordance with RBI regulations. RazorpayX itself is not a bank and doesn't hold or claim to hold a banking license.</p>
+                    <label for="newsletter-email" class="font-bold text-deepBlueHead" >SUBSCRIBE TO OUR <br> NEWSLETTER</label>
+                    <form class="w-fit p-1 relative bg-white rounded-sm pl-2 pr-2 ">
+                        <input type="email" name="email" id="newsletter-email" class="pr-16 border-gray-300 outline-lightBlue focus:outline-lightBlue p-1 text-sm placeholder" placeholder="Your Email address" >
+                        <button class="flex absolute top-2 right-3 font-bold text-sm  text-lightBlue300 transition-all duration-200 hover:text-lightBlue500">Subscribe<svg
                             viewBox="0 0 24 24"
                             focusable="false"
-                            class=" w-[20px] h-[20px] self-center "
+                            class=" w-[15px] h-[15px] ml-1 self-center"
                           >
                             <path
                               fill="currentColor"
                               d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                             ></path>
-                          </svg></a>
-                    </div>
+                          </svg></button>
+                        </form>
                     <div class="flex gap-4">
-                        <img src="images/footer-certificate-1.png" class="w-28 h-16" alt="">
-                        <img src="images/footer-certificate-2.jpg" alt="">
+                        <img src="images/footer-certificate-1.png" class="w-28 h-16 cursor-pointer" alt="">
+                        <img src="images/footer-certificate-2.jpg" class="cursor-pointer" alt="">
                     </div>
                 </div>
 
-                <div class="w-3/4">
-                    <ul class="flex flex-col gap-2">
-                        <h5 class="uppercase font-bold text-gray2">BANKING PLUS</h5>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">RazorpayX</a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
-                            <a href="#">Current Accounts
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">Payouts
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">Payout Links
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">Corporate Credit Card
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">View Live Demo <span class="w-6 bg-green-500 p-1 text-white text-sm">NEW</span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="w-3/4 flex gap-4">
+                    <div class="flex flex-col gap-3 ">
 
-                    <ul class="flex flex-col gap-2">
-                        <h5 class="uppercase font-bold text-gray2">lending</h5>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">Razorpay Capital
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
-                            <a href="#">Instant Settlements
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">BANKING PLUS</h5>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">RazorpayX</a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Current Accounts
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Payouts
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Payout Links
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Corporate Credit Card
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">View Live Demo <span class="w-6 bg-green-500 p-1 text-white text-sm">NEW</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+    
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">lending</h5>
+    
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Razorpay Capital
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Instant Settlements
+        
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Working Capital Loans
+        
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Marketplace Instant Settlements
+                                    </a>
+                              </li>
+                            </ul>
+                        </div>
 
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">Working Capital Loans
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">risk & fraud</h5>
+    
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Thirdwatch
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">PrePay CoD
+                                        <span class="w-6 bg-green-500 p-1 text-white text-sm">NEW</span>
+                                    </a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">BECOME A PARTNER</h5>
+    
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Refer and Earn
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Onboarding APIs
+                                    </a>
+                                </li>
+                              
+                            </ul>
+                        </div>
 
-                            </a>
-                        </li>
-                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
-                            <a href="#">Marketplace Instant Settlements
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">MORE</h5>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Route</a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Invoices
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Freelancer Payments
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">International
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Flash Checkout
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">UPI 
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">ePOS 
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Checkout Demo 
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">RazorpayX Payroll 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+                    </div>
+
+                    <div class="flex flex-col gap-4 ">
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">ACCEPT PAYMENTS</h5>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Payment Gateway</a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Payment Pages
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Payment Links
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">QR Codes
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Subscriptions
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Smart Collect 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">DEVELOPERS</h5>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Docs</a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Integrations
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">API Reference
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                                <h5 class="uppercase font-bold text-gray2">RESOURCES</h5>
+                                <ul class="flex flex-col gap-2">
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                        <a href="#">Customer Stories
+                                        </a>
+                                    </li>
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                        <a href="#">Events
+                                        </a>
+                                    </li>
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                        <a href="#">Chargeback Guide
+                                        </a>
+                                    </li>
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                        <a href="#">Settlement Guide
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                    <h5 class="uppercase font-bold text-gray2">SOLUTIONS</h5>
+                                    <ul class="flex flex-col gap-2">
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#">Education</a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                            <a href="#">E-commerce
+                                            </a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#">Saas
+                                            </a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#">BFSI
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">FREE TOOLS</h5>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">GST Calculator</a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Online TDS Payment
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">GST Number Search                                      
+                                        <span class="w-6 bg-green-500 p-1 text-white text-sm">NEW</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                         </div>
+
+                         
+
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <h5 class="uppercase font-bold text-gray2">COMPANY</h5>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                    <a href="#">Careers 
+                                        <span class="w-6 bg-green-500 p-1 text-white text-sm">We 're hiring</span>
+
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Terms of Use
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Grievance Redressal
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Responsible Disclosure 
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Partners 
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">White Papers
+                                    </a>
+                                </li>
+                                <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                    <a href="#">Corporate Information
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                            <div>
+                                <h5 class="uppercase font-bold text-gray2">HELP & SUPPORT</h5>
+                                <ul class="flex flex-col gap-2">
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                        <a href="#">Support</a>
+                                    </li>
+                                    <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                        <a href="#">Knowledge base
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                                <div class="flex flex-col gap-4">
+                                    <h5 class="uppercase font-bold text-gray2">FIND US ONLINE</h5>
+                                    <ul class="flex gap-5">
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#"><img
+                                                src="/images/facebook-icon.svg"
+                                                width="24"
+                                                height="24"
+                                                loading="lazy"
+                                              /></a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointe transition-all duration-200r">
+                                            <a href="#"><img
+                                                src="/images/twitter-icon.svg"
+                                                width="24"
+                                                height="24"
+                                                loading="lazy"
+                                              />
+                                            </a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#"><img
+                                                src="/images/instagram-icon.svg"
+                                                width="24"
+                                                height="24"
+                                                loading="lazy"
+                                              />
+                                            </a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#"> <img
+                                                src="/images/github-icon.svg"
+                                                width="24"
+                                                height="24"
+                                                loading="lazy"
+                                              />
+                                            </a>
+                                        </li>
+                                        <li class="text-lightBlue500 hover:text-grayBlue cursor-pointer transition-all duration-200">
+                                            <a href="#"><img
+                                                src="/images/linkedin-icon.svg"
+                                                width="24"
+                                                height="24"
+                                                loading="lazy"
+                                              />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-4 mt-1 ">
+                                    <h5 class="uppercase font-bold text-gray2">REGD. OFFICE ADDRESS
+                                    </h5>
+                                    <p class="text-sm"> Razorpay Software Private Limited,<br>
+                                        1st Floor, SJR Cyber,<br>
+                                        22 Laskar Hosur Road, Adugodi,<br>
+                                        Bengaluru, 560030,<br>
+                                        Karnataka, India<br>
+                                        CIN: U72200KA2013PTC097389
+                                    </p>
+                                    <p class="text-sm">
+                                        © Razorpay 2022<br>
+                                        All Rights Reserved
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>  
         </footer>
     </div>
 </body>
